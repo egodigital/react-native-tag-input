@@ -405,14 +405,13 @@ class Tag extends React.PureComponent<TagProps> {
             this.props.tagTextStyle,
           ]}>
             {this.props.label}
-            &nbsp;&times;
         </Text>
       );
     }
     return (
       <TouchableOpacity
         disabled={!this.props.editable}
-        onPress={this.onPress}
+        // onPress={this.onPress}
         onLayout={this.onLayoutLastTag}
         style={[
           styles.tag,
